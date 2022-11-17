@@ -8,7 +8,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="navigation.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -16,25 +18,107 @@
 		</div>
 		<div class="container">
 			<div class="primary-box">
-				<div class="project-image"></div>
-				<div class="project-description">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vitae quasi. Exercitationem possimus
-					assumenda nisi laboriosam quasi, mollitia laborum quisquam!
+				<div id="project-image">
+					<img src="images/project-images/about.png" alt="" class="project-info about-me" />
+					<img src="images/project-images/project-gallery.png" alt="" class="project-info project-gallery" style="display: none" />
+					<img src="images/project-images/music-production.png" alt="" class="project-info music-production" style="display: none" />
+					<img src="images/project-images/comment box.png" alt="" class="project-info comment-box" style="display: none" />
+					<img src="images/project-images/movie-data.png" alt="" class="project-info movie-data" style="display: none" />
+					<img src="images/project-images/website.png" alt="" class="project-info website" style="display: none" />
+					<img src="images/project-images/feature.png" alt="" class="project-info feature" style="display: none" />
+				</div>
+				<div id="project-description" class="roboto">
+					<div class="project-info about-me">
+						<h2 id="project-title">About Me</h2>
+						<p>
+							Hi! I'm Travis, I'm 28 and have recently started my coding journey in the last few months. I've grown up with computers from a very young age but never thought to
+							build a career off that familiarity until a friend put together and ran a few creative javascript activities over Discord earlier this year. Since then I've been
+							hooked! I then dove straight into Code Academy to learn my html, css and javascript basics over the summer and got cracking with my projects!
+						</p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+					</div>
+					<div class="project-info project-gallery" style="display: none">
+						<h2 id="project-title">Project Gallery</h2>
+						<p>
+							A card interface gallery of all my projects. Included in each card is an image, a description and links to the relevant github pagesand repository. The amount of
+							cards per row is reduced depending on screen width and each card expands to reveal the description text.
+						</p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+					</div>
+					<div class="project-info music-production" style="display: none">
+						<h2 id="project-title">Music Production</h2>
+						<p>
+							A webpage about music production! It lists some of the equipment I use and a bit of information regarding my workflow. I used flexbox for the first time here and
+							seperated all the sections into columns. Ive also added in embedded soundcloud players.
+						</p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+					</div>
+					<div class="project-info comment-box" style="display: none">
+						<h2 id="project-title">Comment Box</h2>
+						<p>
+							A very simple comment box with 2 inputs for Name and Email Address as well as a text area input for the comment field. I included placeholder text. The comment text
+							area has a character limit of 140 that will turn red when exceded, as well as a required attribute in all fields. On submit, comments are displayed below and persist
+							when a new comment is added.
+						</p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+					</div>
+					<div class="project-info movie-data" style="display: none">
+						<h2 id="project-title">Movie Data</h2>
+						<p>
+							A simple interface using javascript objects to display film posters in a slider with relevant information such as plot, cast, rating etc. displayed on the left. The
+							films are able to be sorted Alphabetically using a button above the slider as well as navigated through using arrows underneath. The user can add or edit their own
+							review which is then stored within the key for each film and is persistent when navigating and sorting.
+						</p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+					</div>
+					<div class="project-info website" style="display: none">
+						<h2 id="project-title">Website</h2>
+						<p></p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+					</div>
+					<div class="project-info feature" style="display: none">
+						<h2 id="project-title">Feature</h2>
+						<p></p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+					</div>
 				</div>
 			</div>
 			<div class="secondary-box">
-				<div class="learnings">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ut harum, minus praesentium velit delectus
-					magnam asperiores, iusto vel beatae maxime illo dolorem sunt fugiat blanditiis adipisci quod atque. Ipsum?
+				<div id="learnings" class="roboto">
+					<p class="project-info about-me">
+						I started this journey to leave the trenches of retail and start a lifelong career in Tech to better the lives of myself and my family. I'm excited by the diversity in
+						work and oppurtunity in the world of Tech and feel like Web Dev is the perfect stepping stone. I'm drawn the problem solving nature of coding.
+					</p>
+					<p class="project-info project-gallery" style="display: none">
+						Using .addEventListener, .querySelector and .classlist.add for the first time, I created a function that changes the class of the element between 2 styles as well as
+						swapping the button textarea between "+Expand" and "-Collapse".
+					</p>
+					<p class="project-info music-production" style="display: none">
+						A webpage about music production! It lists some of the equipment I use and a bit of information regarding my workflow. I used flexbox for the first time here and
+						seperated all the sections into columns. Ive also added in embedded soundcloud players.
+					</p>
+					<p class="project-info comment-box" style="display: none">
+						Using a Form Element I created inputs within for Name and Email Address and a textarea for the comment. I learnt about focus and active and used stylings to highlight
+						which input was currently active. Using DOM Manipulation the saved comments are added below using .appendChild. I also learnt about alerts and utilised them to alert
+						the user if the character limited has been exceeded when trying to submit.
+					</p>
+					<p class="project-info movie-data" style="display: none">
+						Objects! Using Object.keys.sort I mutated the movie data object to return an array of the keys to establish an index, which could then be used to sort alphabetically
+						and navigate between cards. This allowed me to manipulate text and image elements when navigating or sorting. Learning about .setAttribute allowed me to push image
+						source links from object propert values into the element as well as alter the background-colour in the body. dataset.mode allowed me to create 2 different states for
+						editing or displaying the reviews and window.confirm helped solved the unexpected issue reviews being saved when navigating or sorting in edit mode.
+					</p>
+					<p class="project-info website" style="display: none"></p>
+					<p class="project-info feature" style="display: none"></p>
 				</div>
 				<div class="navigator">
-					<button id="about">About</button>
-					<button id="project-gallery">Project Gallery</button>
-					<button id="hobby-page">Hobby Page</button>
-					<button id="comment-box">Comment Box</button>
-					<button id="movie-data">Movie Data</button>
-					<button id="website">Website</button>
-					<button id="feature">Feature</button>
+					<button id="about" onclick="onClickTab('about-me')">About</button>
+					<button id="project-gallery" onclick="onClickTab('project-gallery')">Project Gallery</button>
+					<button id="music-production" onclick="onClickTab('music-production')">Music Production</button>
+					<button id="comment-box" onclick="onClickTab('comment-box')">Comment Box</button>
+					<button id="movie-data" onclick="onClickTab('movie-data')">Movie Data</button>
+					<button id="website" onclick="onClickTab('website')">Website</button>
+					<button id="feature" onclick="onClickTab('feature')">Feature</button>
 				</div>
 			</div>
 		</div>
