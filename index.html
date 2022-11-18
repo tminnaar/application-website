@@ -13,10 +13,11 @@
 		<script src="navigation.js"></script>
 	</head>
 	<body>
-		<div class="header">
-			<h1>TRAVIS MINNAAR</h1>
-		</div>
 		<div class="container">
+			<div class="header">
+				<h1>TRAVIS MINNAAR</h1>
+				<div class="header-underline"></div>
+			</div>
 			<div class="primary-box">
 				<div id="project-image">
 					<img src="images/project-images/about.png" alt="" class="project-info about-me" />
@@ -35,7 +36,8 @@
 							build a career off that familiarity until a friend put together and ran a few creative javascript activities over Discord earlier this year. Since then I've been
 							hooked! I then dove straight into Code Academy to learn my html, css and javascript basics over the summer and got cracking with my projects!
 						</p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar" target="_blank">github ↗</a>
 					</div>
 					<div class="project-info project-gallery" style="display: none">
 						<h2 id="project-title">Project Gallery</h2>
@@ -43,7 +45,9 @@
 							A card interface gallery of all my projects. Included in each card is an image, a description and links to the relevant github pagesand repository. The amount of
 							cards per row is reduced depending on screen width and each card expands to reveal the description text.
 						</p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar/project-gallery" target="_blank">Repo ↗</a>
+						<a href="https://tminnaar.github.io/project-gallery/" target="_blank">Pages ↗</a>
 					</div>
 					<div class="project-info music-production" style="display: none">
 						<h2 id="project-title">Music Production</h2>
@@ -51,7 +55,9 @@
 							A webpage about music production! It lists some of the equipment I use and a bit of information regarding my workflow. I used flexbox for the first time here and
 							seperated all the sections into columns. Ive also added in embedded soundcloud players.
 						</p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar/music-production" target="_blank">Repo ↗</a>
+						<a href="https://tminnaar.github.io/music-production/" target="_blank">Pages ↗</a>
 					</div>
 					<div class="project-info comment-box" style="display: none">
 						<h2 id="project-title">Comment Box</h2>
@@ -60,7 +66,9 @@
 							area has a character limit of 140 that will turn red when exceded, as well as a required attribute in all fields. On submit, comments are displayed below and persist
 							when a new comment is added.
 						</p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar/comment-box" target="_blank">Repo ↗</a>
+						<a href="https://tminnaar.github.io/comment-box/" target="_blank">Pages ↗</a>
 					</div>
 					<div class="project-info movie-data" style="display: none">
 						<h2 id="project-title">Movie Data</h2>
@@ -69,17 +77,23 @@
 							films are able to be sorted Alphabetically using a button above the slider as well as navigated through using arrows underneath. The user can add or edit their own
 							review which is then stored within the key for each film and is persistent when navigating and sorting.
 						</p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar/movie-data" target="_blank">Repo ↗</a>
+						<a href="https://tminnaar.github.io/movie-data/" target="_blank">Pages ↗</a>
 					</div>
 					<div class="project-info website" style="display: none">
 						<h2 id="project-title">Website</h2>
 						<p></p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar/application-website" target="_blank">Repo ↗</a>
+						<a href="https://tminnaar.github.io/application-website/" target="_blank">Pages ↗</a>
 					</div>
 					<div class="project-info feature" style="display: none">
 						<h2 id="project-title">Feature</h2>
 						<p></p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" target="" id="git-icon" />
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar/application-website" target="_blank">Repo ↗</a>
+						<a href="" target="_blank">Pages ↗</a>
 					</div>
 				</div>
 			</div>
@@ -105,20 +119,20 @@
 					<p class="project-info movie-data" style="display: none">
 						Objects! Using Object.keys.sort I mutated the movie data object to return an array of the keys to establish an index, which could then be used to sort alphabetically
 						and navigate between cards. This allowed me to manipulate text and image elements when navigating or sorting. Learning about .setAttribute allowed me to push image
-						source links from object propert values into the element as well as alter the background-colour in the body. dataset.mode allowed me to create 2 different states for
+						source links from object property values into the element as well as alter the background-colour in the body. dataset.mode allowed me to create 2 different states for
 						editing or displaying the reviews and window.confirm helped solved the unexpected issue reviews being saved when navigating or sorting in edit mode.
 					</p>
 					<p class="project-info website" style="display: none"></p>
 					<p class="project-info feature" style="display: none"></p>
 				</div>
 				<div class="navigator">
-					<button id="about" onclick="onClickTab('about-me')">About</button>
-					<button id="project-gallery" onclick="onClickTab('project-gallery')">Project Gallery</button>
-					<button id="music-production" onclick="onClickTab('music-production')">Music Production</button>
-					<button id="comment-box" onclick="onClickTab('comment-box')">Comment Box</button>
-					<button id="movie-data" onclick="onClickTab('movie-data')">Movie Data</button>
-					<button id="website" onclick="onClickTab('website')">Website</button>
-					<button id="feature" onclick="onClickTab('feature')">Feature</button>
+					<button id="about-me" class="underline-hover" onclick="onClickTab('about-me')" autofocus>About Me</button>
+					<button id="project-gallery" class="underline-hover" onclick="onClickTab('project-gallery')">Project Gallery</button>
+					<button id="music-production" class="underline-hover" onclick="onClickTab('music-production')">Music Production</button>
+					<button id="comment-box" class="underline-hover" onclick="onClickTab('comment-box')">Comment Box</button>
+					<button id="movie-data" class="underline-hover" onclick="onClickTab('movie-data')">Movie Data</button>
+					<button id="website" class="underline-hover" onclick="onClickTab('website')">Website</button>
+					<button id="feature" class="underline-hover" onclick="onClickTab('feature')">Feature</button>
 				</div>
 			</div>
 		</div>

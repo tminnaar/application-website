@@ -1,6 +1,3 @@
-body {
-}
-
 body:before {
 	content: "";
 	position: fixed;
@@ -9,18 +6,18 @@ body:before {
 	right: 0;
 	z-index: -1;
 	display: block;
-	background-image: url(images/misty-morning.jpg);
+	background-image: url(images/sand-dune-2560x1440.jpg);
 	background-size: cover;
 	width: 100%;
 	height: 100%;
-	filter: blur(5px);
+	filter: blur(6px);
 	transform: scale(1.05);
 }
 
 .header {
 	display: flex;
-	justify-content: right;
-	align-self: center;
+	width: 1300px;
+	padding-left: 50px;
 }
 
 h1 {
@@ -32,14 +29,22 @@ h1 {
 	margin-bottom: 5px;
 }
 
-h1 {
-	font-family: "Space Mono", monospace;
+a {
+	padding-left: 20px;
+	font-family: "Space Mono", sans-serif;
+	font-weight: 800;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+
+p {
+	font-weight: 400;
 }
 
 .roboto {
 	font-family: "Roboto", sans-serif;
 }
-
 .container {
 	display: flex;
 	flex-direction: row;
@@ -47,11 +52,12 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	margin-top: 50px;
 	height: 900px;
 	width: 1300px;
-	gap: 30px;
-	background-color: #8b8c8b;
-	border-radius: 20px;
+	gap: 16px;
+	background-color: #f2f2ee;
+	border-radius: 10px;
 	z-index: 10;
 }
 
@@ -76,24 +82,24 @@ h1 {
 	height: 400px;
 }
 
-.project-title {
-	margin-top: 0px;
-}
-
 #project-description {
 	display: flex;
 	flex-direction: column;
 	width: 600px;
 	padding-left: 50px;
+	padding-right: 100px;
 	box-sizing: border-box;
 	font-size: 16px;
 	line-height: 35px;
 }
 
+#project-description h2 {
+	margin-top: 0;
+}
+
 #git-icon {
-	width: 30px;
-	height: 30px;
-	filter: invert();
+	width: 40px;
+	height: 40px;
 }
 
 .secondary-box {
@@ -126,10 +132,13 @@ h1 {
 
 .navigator button {
 	font-family: "Space Mono", monospace;
-	width: 300px;
+	border: none;
+	text-align: left;
+	width: 450px;
 	height: 50px;
 	font-size: 25px;
-	border-bottom: 3px solid black;
+	font-weight: 800;
+	cursor: pointer;
 }
 
 .navigator ul li {
@@ -137,12 +146,48 @@ h1 {
 	font-family: "Space Mono", monospace;
 	width: 300px;
 	height: 50px;
-	font-size: 25px;
-	border-bottom: 3px solid black;
 }
 
 .navigator button:focus {
-	transition: background-color 1s ease;
+	transition: background-color 1.5s ease;
 	background-color: black;
-	color: #f2edd5;
+	color: #f2f2ee;
+}
+
+.underline-hover {
+	display: inline-block;
+	padding-bottom: 1px;
+	position: relative;
+}
+
+.underline-hover::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 3px;
+	background-color: rgb(0, 0, 0);
+	transition: width 0.25s ease-out;
+}
+.underline-hover:hover::before {
+	width: 100%;
+}
+
+.header-underline {
+	position: absolute;
+	width: 1038px;
+	animation: 3s ease-out 0s 1 slideInFromLeft;
+	border-bottom: 5px solid black;
+	padding: 35px;
+	transform-origin: left center;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: scaleX(0%);
+	}
+	100% {
+		transform: scaleX(100%);
+	}
 }
