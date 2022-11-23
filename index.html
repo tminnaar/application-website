@@ -20,13 +20,13 @@
 			</div>
 			<div class="primary-box">
 				<div id="project-image">
-					<img src="images/project-images/about.png" alt="" class="project-info about-me" />
+					<img src="images/project-images/portrait.png" alt="" class="project-info about-me" />
 					<img src="images/project-images/project-gallery.png" alt="" class="project-info project-gallery" style="display: none" />
 					<img src="images/project-images/music-production.png" alt="" class="project-info music-production" style="display: none" />
 					<img src="images/project-images/comment box.png" alt="" class="project-info comment-box" style="display: none" />
 					<img src="images/project-images/movie-data.png" alt="" class="project-info movie-data" style="display: none" />
 					<img src="images/project-images/website.png" alt="" class="project-info website" style="display: none" />
-					<img src="images/project-images/feature.png" alt="" class="project-info feature" style="display: none" />
+					<div class="project-info feature" style="display: none; flex: 1"><div class="reflex-game"></div></div>
 				</div>
 				<div id="project-description" class="roboto">
 					<div class="project-info about-me">
@@ -92,16 +92,7 @@
 						<a href="https://github.com/tminnaar/application-website" target="_blank">Repo ↗</a>
 						<a href="https://tminnaar.github.io/application-website/" target="_blank">Pages ↗</a>
 					</div>
-					<div class="project-info feature" style="display: none">
-						<h2 id="project-title">Feature</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo sapiente, id aspernatur ab iure praesentium quo ratione similique maxime? Beatae qui, dolorum
-							distinctio provident, nulla consequuntur libero vero magni sapiente eligendi consequatur quo earum repudiandae harum quam. Quia, sint.
-						</p>
-						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
-						<a href="https://github.com/tminnaar/application-website" target="_blank">Repo ↗</a>
-						<a href="" target="_blank">Pages ↗</a>
-					</div>
+					<div class="project-info feature" style="display: none; flex: 0.5">Score: 20</div>
 				</div>
 			</div>
 			<div class="secondary-box">
@@ -133,11 +124,16 @@
 						I used psuedo classes more frequently here in order to achieve fill and underline animations on the tabs and keyframe animations to animate the header underline on page
 						load. Within my navigation function I used Array.from to index all the tabs to iterate through and add or remove classes to toggle the display state.
 					</p>
-					<p class="project-info feature" style="display: none">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quas qui et vero, optio distinctio totam necessitatibus suscipit accusantium ipsum dolore? Quaerat
-						numquam veniam, et repudiandae ipsum optio veritatis quasi perferendis necessitatibus molestias tempore beatae quam cum tempora, velit dolores autem unde rerum nulla
-						eum, neque eveniet exercitationem! Quod debitis, cumque suscipit deleniti beatae hic exercitationem eaque esse quidem tempore!
-					</p>
+					<div class="project-info feature" style="display: none">
+						<h2 id="project-title">Feature</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo sapiente, id aspernatur ab iure praesentium quo ratione similique maxime? Beatae qui, dolorum
+							distinctio provident, nulla consequuntur libero vero magni sapiente eligendi consequatur quo earum repudiandae harum quam. Quia, sint.
+						</p>
+						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
+						<a href="https://github.com/tminnaar/application-website" target="_blank">Repo ↗</a>
+						<a href="" target="_blank">Pages ↗</a>
+					</div>
 				</div>
 				<div class="navigator">
 					<button id="about-me" class="underline-hover" onclick="onClickTab('about-me')" autofocus>About Me</button>
