@@ -79,7 +79,7 @@ p {
 #project-image img {
 	width: 400px;
 	height: 400px;
-	box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.521);
+	box-shadow: 20px 20px 18px -12px rgba(0, 0, 0, 0.521);
 }
 
 #project-description {

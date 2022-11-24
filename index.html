@@ -9,8 +9,11 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="reflex-game.css" />
 		<script src="navigation.js"></script>
+		<script src="reflex-game.js" defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -20,7 +23,7 @@
 			</div>
 			<div class="primary-box">
 				<div id="project-image">
-					<img src="images/project-images/portrait.png" alt="" class="project-info about-me" />
+					<img src="images/project-images/portrait-gradient.png" alt="" class="project-info about-me" />
 					<img src="images/project-images/project-gallery.png" alt="" class="project-info project-gallery" style="display: none" />
 					<img src="images/project-images/music-production.png" alt="" class="project-info music-production" style="display: none" />
 					<img src="images/project-images/comment box.png" alt="" class="project-info comment-box" style="display: none" />
@@ -84,15 +87,31 @@
 					<div class="project-info website" style="display: none">
 						<h2 id="project-title">Website</h2>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde reiciendis perspiciatis doloremque consequatur suscipit fugit quo aspernatur deleniti veniam modi id
-							consequuntur cum voluptatibus quasi, vel corporis voluptate dolor pariatur eaque? Voluptate consectetur provident inventore repellat rem! Sequi unde earum sapiente
-							suscipit facere dignissimos voluptas laboriosam quidem in, expedita vitae!
+							A single page portfolio with tab navigation and dynamic content. When navigating, classes are added and removed to display the relevant project image, description and
+							learnings. I went for a monochromatic color scheme, a sleek background image and animations on hover and on page load.
 						</p>
 						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
 						<a href="https://github.com/tminnaar/application-website" target="_blank">Repo ↗</a>
 						<a href="https://tminnaar.github.io/application-website/" target="_blank">Pages ↗</a>
 					</div>
-					<div class="project-info feature" style="display: none; flex: 0.5">Score: 20</div>
+					<div class="project-info feature" style="display: none; flex: 0.5">
+						<div id="game-container">
+							<div id="game-area">
+								<div id="game-popup-box">
+									<h1 id="game-popup-text" onclick="startGame()">Start Game</h1>
+								</div>
+								<div id="game-target" onclick="targetClick()"></div>
+							</div>
+							<div id="score-display">
+								<h2>TIME REMAINING:</h2>
+								<p id="time-number"></p>
+								<h2>SCORE:</h2>
+								<p id="score-number"></p>
+								<h2>HIGH SCORE</h2>
+								<p id="high-score-number"></p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="secondary-box">
@@ -127,12 +146,11 @@
 					<div class="project-info feature" style="display: none">
 						<h2 id="project-title">Feature</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo sapiente, id aspernatur ab iure praesentium quo ratione similique maxime? Beatae qui, dolorum
-							distinctio provident, nulla consequuntur libero vero magni sapiente eligendi consequatur quo earum repudiandae harum quam. Quia, sint.
+							A reaction time based game with each rounding lasting 30 seconds. The goal is to click as many targets within the time alloted while the targets randomly resize and
+							reposition when clicked. On the left is a panel that display the time remaining, the current score and the high score.
 						</p>
 						<img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="" target="" id="git-icon" />
-						<a href="https://github.com/tminnaar/application-website" target="_blank">Repo ↗</a>
-						<a href="" target="_blank">Pages ↗</a>
+						<a href="https://github.com/tminnaar/reflex-game" target="_blank">Repo ↗</a>
 					</div>
 				</div>
 				<div class="navigator">
